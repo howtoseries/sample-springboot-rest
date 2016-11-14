@@ -5,4 +5,4 @@ RUN cd /tmp && git clone https://github.com/howtoseries/sample-springboot-rest.g
     cd sample-springboot-rest/gs-rest-service-complete/ && \
     mvn package
 EXPOSE 8080
-CMD ["/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java","-jar", "/tmp/sample-springboot-rest/gs-rest-service-complete/target/*jar"]
+CMD /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java -jar /tmp/sample-springboot-rest/gs-rest-service-complete/target/*jar
